@@ -29,7 +29,7 @@ Amaç, HTML, CSS, JavaScript ve PHP kullanarak kişisel bir web sitesi oluşturm
 
 ## 🔗 Bağlantılar
 
-- GitHub Repo: (buraya link koyacaksın)
+- GitHub Repo: (https://github.com/serhaturuc-hash/Projem)
 - Canlı Site: (bunu sonra ekleyeceğiz)
 
 ## 👤 Geliştirici
