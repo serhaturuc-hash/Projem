@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Şehrim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Batman</h1>
+    <p>2. şehrim</p>
+</header>
+
+<section>
+    <h2>Hakkında</h2>
+    <p>Batman, Güneydoğu Anadolu Bölgesi’nde yer alan ve özellikle petrol üretimiyle öne çıkan önemli şehirlerden biridir. 1957 yılında il statüsü kazanan Batman, genç nüfusu ve hızlı gelişen yapısıyla dikkat çekerken, ekonomik olarak petrol, tarım ve ticaret alanlarında güçlü bir konuma sahiptir. Şehrin yakınında bulunan Hasankeyf gibi tarihi yerler, bölgenin binlerce yıllık geçmişini yansıtırken, Batman günümüzde hem modernleşen şehir yapısı hem de zengin kültürel dokusuyla öne çıkar. Geleneksel yaşam ile şehir hayatının iç içe geçtiği Batman, Güneydoğu’nun yükselen şehirlerinden biri olarak önemli bir potansiyele sahiptir.</p>
+</section>
+
+<section>
+    <h2>Gezilecek Yerler</h2>
+    <ul>
+        <li>Hasankeyf</li>
+        <li>Malabadi Köprüsü</li>
+        <li>Batman Park</li>
+        <li>Hasankeyf Mağaraları</li>
+        <li>Çorti Kilisesi</li>
+        <li>Memikan Köprüsü</li>
+        <li>Er-Rızk Camii</li>
+        <li>Kırkat Göleti Mesire Alanı</li>
+        <li>Mor Kiryakus Manastırı</li>
+        <li>Saint Pierre Manastırı (Komk Manastırı)</li>
+        <li>Hallan Çemi Höyüğü</li>
+        <li>Zeynel Bey Türbesi</li>
+        <li>Berha Yezidiya-Resimli Kaya Sığınağı</li>
+        <li>Hızır Bey Cami</li>
+    </ul>
+</section>
+<script>
+let images =[
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Malabadibridge.jpg/960px-Malabadibridge.jpg",
+    "https://www.turizmajansi.com/images/haber/sumer-magaralari-butik-ot_2c0d.jpg",
+    "http://batmankulturenvanteri.org/Uploads/Haberler/_10_kfsa1gz5zo/%C3%87orti%20Kilisesi%20%20(5).jpg",
+    "https://www.turkiyenintarihieserleri.com/foto_y/2020/07/b/1594741177.jpg",
+    "https://ilkha.com/img/OldFeaturedImage/TR//Norm/kirkat-goleti-mesire-alani-hizmette9c.jpg",
+    "https://www.ilkha.com/img/OldFeaturedImage/TR//Norm/mor-kuryakos-manastiri-nda-restorasyon-calismalarinin-sonuna-gelindi1587555215.jpg",
+    "http://batmankulturenvanteri.org/Uploads/Haberler/_10_cha6lhl36l/Saint%20Pierre%20Manast%C4%B1r%C4%B1%20(3).jpg",
+    "https://image.hurimg.com/i/hurriyet/90/770x0/5acdf02cc03c0e1f106742a2.jpg",
+    "https://www.kulturportali.gov.tr/contents/images/Batman_Zeynel_Bey_K%C3%BCmbeti(4)%20kopya(1).jpg",
+    "http://batmankulturenvanteri.org/Uploads/Haberler/_10_tei6ptv64v/thumbs/Res.%20Kay.%20S%C4%B1%C4%9F%20%20(2).jpg",
+    "https://gelecekpartisi.org.tr/uploads/teskilat_tanitim/galeri-hizir-bey-camii-15_06_2022_08_37_52.jpg",
+    ];
+
+let index = 0;
+
+function showImage() {
+    document.getElementById("slide").src = images[index];
+}
+
+function next() {
+    index = (index + 1) % images.length;
+    showImage();
+}
+
+function prev() {
+    index = (index - 1 + images.length) % images.length;
+    showImage();
+}
+</script>
+<div class="slider">
+    <img id="slide" src="https://via.placeholder.com/400">
+</div>
+
+<button onclick="prev()">Geri</button>
+<button onclick="next()">İleri</button>
+
+<footer>
+    <p>İletişim: Serhat.uruc@ogr.sakarya.edu.tr</p>
+</footer>
+
+<br>
+
+<a href="index.html">Ana Sayfa</a>
+
+</body>
+</html>
