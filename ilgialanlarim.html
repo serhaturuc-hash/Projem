@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İlgi Alanlarım</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Favori Filmler</h1>
+</header>
+
+<section>
+    <input type="text" id="movieInput" placeholder="Film adı gir">
+    <button onclick="searchMovie()">Ara</button>
+
+    <div id="result"></div>
+</section>
+
+<script>
+async function searchMovie() {
+
+    let movie = document.getElementById("movieInput").value;
+
+    let response = await fetch(
+        `https://www.omdbapi.com/?t=${movie}&apikey=745250d9`
+    );
+
+    let data = await response.json();
+
+    document.getElementById("result").innerHTML = `
+        <h2>${data.Title}</h2>
+        <img src="${data.Poster}">
+        <p>Yıl: ${data.Year}</p>
+        <p>Tür: ${data.Genre}</p>
+    `;
+}
+</script>
+
+</body>
+</html>
