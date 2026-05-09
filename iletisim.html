@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>İletişim</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>İletişim</h1>
+</header>
+
+<section>
+
+<form id="contactForm">
+
+<label>Ad Soyad:</label>
+<br>
+<input type="text" id="name">
+<br><br>
+
+<label>Email:</label>
+<br>
+<input type="text" id="email">
+<br><br>
+
+<label>Telefon:</label>
+<br>
+<input type="text" id="phone">
+<br><br>
+
+<label>Cinsiyet:</label>
+<br>
+
+<input type="radio" name="gender"> Erkek
+<input type="radio" name="gender"> Kadın
+
+<br><br>
+
+<label>İlgi Alanı:</label>
+<br>
+
+<select id="interest">
+    <option>Yazılım</option>
+    <option>Oyun</option>
+    <option>Müzik</option>
+    <option>Spor</option>
+    <option>Dans</option>
+    <option>Resim</option>
+    <option>Mühendis</option>
+    <option>Diğer</option>
+</select>
+
+<br><br>
+
+<input type="checkbox"> Bilgileri kabul ediyorum
+
+<br><br>
+
+<button type="button" onclick="validateForm()">
+Kontrol Et
+</button>
+
+</form>
+
+<p id="message"></p>
+
+</section>
+
+<script>
+
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+
+    if(name == "" || email == "" || phone == "") {
+
+        document.getElementById("message").innerHTML =
+        "Boş alan bırakmayın";
+
+        return;
+    }
+
+    if(!email.includes("@")) {
+
+        document.getElementById("message").innerHTML =
+        "Email yanlış";
+
+        return;
+    }
+
+    if(isNaN(phone)) {
+
+        document.getElementById("message").innerHTML =
+        "Telefon sadece sayı olmalı";
+
+        return;
+    }
+
+    document.getElementById("message").innerHTML =
+    "Form başarılı";
+
+}
+
+</script>
+
+</body>
+</html>
