@@ -3,8 +3,8 @@
 $email = $_POST["email"];
 $password = $_POST["password"];
 
-$dogruEmail = "serhaturuc80@gmail.com";
-$dogruSifre = "serhaturuc";
+$dogruEmail = "serhat.uruc@ogr.sakarya.edu.tr";
+$dogruSifre = "b251210022";
 
 if($email == $dogruEmail && $password == $dogruSifre) {
 
