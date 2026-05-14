@@ -32,7 +32,7 @@ Giriş Yap
 </form>
 
 </section>
-
+<a href="index.html" class="btn">Ana Sayfa</a>
 </body>
 </html>
 
