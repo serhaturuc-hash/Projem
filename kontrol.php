@@ -18,4 +18,4 @@ else {
 }
 
 ?>
-
+<a href="login.php" class="btn">Giriş Sayfası</a>
