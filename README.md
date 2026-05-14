@@ -30,7 +30,7 @@ Amaç, HTML, CSS, JavaScript ve PHP kullanarak kişisel bir web sitesi oluşturm
 ## 🔗 Bağlantılar
 
 - GitHub Repo: (https://github.com/serhaturuc-hash/Projem)
-- Canlı Site: (http://serhat.kesug.com/?i=1)
+- Canlı Site: (http://serhat.kesug.infinityfreeapp.com/?i=1)
 
 ## 👤 Geliştirici
 
