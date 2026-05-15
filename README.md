@@ -18,7 +18,6 @@ Amaç, HTML, CSS, JavaScript ve PHP kullanarak kişisel bir web sitesi oluşturm
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
 - PHP
 
 ## 🚀 Proje Amacı
